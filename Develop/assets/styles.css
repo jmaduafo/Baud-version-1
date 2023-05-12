@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #4211A9;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+h3, h4, h5 {
+    font-weight: 400;
+}
+
+/* ----------HEADER SECTION----------- */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all .4s ease;
+}
+
+nav {
+    padding: 15px 60px;
+}
+
+.baud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    gap: 15px;
+}
+
+.header-logo p:first-child {
+    margin-bottom: -5px;
+}
+
+.header-logo p:last-child {
+    font-weight: 600;
+}
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header-nav li {
+    list-style-type: none;
+}
+
+.header-nav li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    transition: all .4s ease
+}
+
+.header-socials i:last-child {
+    margin-left: 10px;
+}
+
+.header-socials i {
+    transition: all .4s ease;
+}
+
+.header-socials a {
+    color: white;
+}
+
+.header-socials i:hover {
+    cursor: pointer;
+}
+
+/* ------------HERO SECTION------------- */
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: -5;
+  }
+
+.hero-container {
+    width: 60%;
+}
+
+.intro-text h1 {
+    width: 65%;
+    line-height: 80px;
+}
+
+.intro-circle {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background-color: #16DAE7;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translateY(-50%);
+    z-index: -5;
+    background-image: url("./images/artificial-intel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.intro-button button {
+    background-color: transparent;
+    border: 1.5px solid white;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 5px 35px;
+    border-radius: 50px;
+    margin-top: 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+.intro-button button:hover {
+    cursor: pointer;
+}
+
+/* ----------ABOUT US SECTION (DESCRIPTION)--------------- */
+.full-about {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10em 0;
+}
+
+.about-description {
+    display: flex;
+    margin-bottom: 10em;
+}
+
+.about-heading, .about-paragraph {
+    flex-basis: 50%;
+}
+
+.about-heading h2 {
+    width: 80%;
+}
+
+.about-paragraph p:first-child {
+    margin-bottom: 1.5em;
+}
+
+/* ----------ABOUT US SECTION (SERVICES)--------------- */
+.about-services {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+    height: 380px;
+}
+
+.services {
+    width: calc(100% / 3 - 40px);
+    border: 1px solid white;
+    height: 330px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+.service2 {
+    align-self: flex-end;
+}
+
+.services-heading {
+    height: 55%;
+    margin-top: 15px;
+}
+
+/* -------------COMPANIES SECTION---------------- */
+.baud-companies {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 40px 0;
+}
